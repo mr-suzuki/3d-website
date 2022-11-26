@@ -1,0 +1,58 @@
+canvas {
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+main {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  color:white;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  grid-column: 2 / span 5;
+  padding:1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  background: var(--dark-bg);
+}
+
+section {
+  grid-column: 2 / 8;
+  margin-bottom: var(--spacing);
+  background: var(--dark-bg);
+}
+
+quote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+quote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left{
+  grid-column: 6 / 12;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --spacing: 350px;
+  --dark-bg: rgba(15, 15, 15, 0.95);
+}
